@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeScreenController">
+   <children>
+      <SubScene height="400.0" width="601.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <Button fx:id="ajouterTenue" layoutX="156.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToScene" prefHeight="102.0" prefWidth="120.0" style="-fx-background-color: grey;" text="+" textFill="#b54d4d">
+         <font>
+            <Font size="48.0" />
+         </font></Button>
+      <Button fx:id="afficherTenue" layoutX="333.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToScene" prefHeight="102.0" prefWidth="186.0" text="Afficher Tenue" />
+      <Button layoutX="159.0" layoutY="262.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="114.0" text="Supprimer Tenue" />
+      <Button  fx:id="payerTenue" layoutX="333.0" layoutY="265.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="186.0" text="\$" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="131.0" layoutX="-16.0" layoutY="-18.0" stroke="BLACK" strokeType="INSIDE" width="688.0" />
+      <Text fill="#f8f2ec" layoutX="86.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des tenues" wrappingWidth="464.705078125">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

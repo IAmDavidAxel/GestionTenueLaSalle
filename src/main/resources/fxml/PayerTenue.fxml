@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="299.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PayerTenueController">
+   <children>
+
+      <Label layoutX="90.0" layoutY="27.0" prefHeight="18.0" prefWidth="157.0" text="Matricule de l'élève" />
+      <Label layoutX="87.0" layoutY="65.0" prefHeight="18.0" prefWidth="139.0" text="Type de tenue" />
+      <Label layoutX="100.0" layoutY="148.0" prefHeight="18.0" prefWidth="112.0" text="Taille" />
+      <Label layoutX="93.0" layoutY="116.0" prefHeight="18.0" prefWidth="112.0" text="Model" />
+      <Button fx:id="submitButton" layoutX="230.0" layoutY="218.0" mnemonicParsing="false" onAction="#payerTenue" prefHeight="41.0" prefWidth="67.0" text="Payer" />
+      <Button layoutX="320.0" layoutY="218.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="88.0" text="Annuler" />
+      <Label layoutX="93.0" layoutY="183.0" prefHeight="18.0" prefWidth="95.0" text="Nombre" />
+      <TextField fx:id="numberField" layoutX="202.0" layoutY="179.0" prefHeight="26.0" prefWidth="79.0" />
+      <TextField fx:id="matriculeField" layoutX="199.0" layoutY="24.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="modelField" layoutX="199.0" layoutY="113.0" prefHeight="25.0" prefWidth="188.0" />
+      <ComboBox fx:id="typeBox" layoutX="202.0" layoutY="62.0" prefHeight="25.0" prefWidth="188.0" />
+      <ComboBox fx:id="tailleBox" layoutX="199.0" layoutY="145.0" prefHeight="25.0" prefWidth="188.0" />
+
+   </children>
+</AnchorPane>

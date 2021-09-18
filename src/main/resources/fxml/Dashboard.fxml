@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="470.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardController">
+   <children>
+      <HBox minWidth="-Infinity" prefHeight="116.0" prefWidth="1366.0" styleClass="head-background" stylesheets="@../style.css">
+         <children>
+            <Text fill="#f2eeee" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des tenues College La Salle" wrappingWidth="600.13671875">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/image/logo_la_salle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox layoutX="23.0" layoutY="139.0" prefHeight="324.0" prefWidth="199.0" style="-fx-background-color: white;" stylesheets="@../style.css">
+         <children>
+            <JFXButton fx:id="btn_ajouter" alignment="TOP_CENTER" onAction="#handleButton" prefHeight="25.0" prefWidth="275.0" text="Ajouter Tenue" textAlignment="RIGHT">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/image/icons8_add_database_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_list" onAction="#handleButton" prefHeight="25.0" prefWidth="285.0" text="Afficher la liste des tenues">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/image/icons8_list_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_pay" onAction="#handleButton" prefHeight="25.0" prefWidth="276.0" text="Payer une tenue">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/image/icons8_money_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_summary" onAction="#handleButton" prefHeight="25.0" prefWidth="225.0" text="Afficher etats des tenues">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/image/icons8_chart_40px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_ledger" onAction="#handleButton" prefHeight="25.0" prefWidth="203.0" text="Liste des transactions">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/image/icons8_ledger_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="show_pane" layoutX="228.0" layoutY="125.0" prefHeight="324.0" prefWidth="534.0" />
+   </children>
+</AnchorPane>
